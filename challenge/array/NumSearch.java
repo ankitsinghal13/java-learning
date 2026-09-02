@@ -38,7 +38,6 @@ public class NumSearch{
 
             
         }
-        
         System.out.print("it appears " + count + " times");
     }
 }
