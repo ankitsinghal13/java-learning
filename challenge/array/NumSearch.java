@@ -1,10 +1,6 @@
-// sum and average of all elements in an  array.
-
-
-
 import java.util.Scanner;
 
-public class sumandavg{
+public class NumSearch{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
@@ -19,28 +15,30 @@ public class sumandavg{
             i++;
         }
 
-        double sum = 0;
-        int k=0;
-        while(k<num){
-            sum += arr[k];
-            
-            k++;
-        }
-        double avg = sum/num;
 
-        // System.out.print("elements in the array: ");        //OUTPUT
+        //  System.out.print("elements in the array: ");        //OUTPUT
 
         // int j=0;
         // while(j<num){
         //     System.out.print(arr[j] + " ");
             
         //     j++;
-        // }
+        // 
 
+        System.out.print("Enter element to count its occurence:");
+        int search = input.nextInt();
+        int count= 0;
+        int k =0;
+        while(k < arr.length){
+            if(arr[k] == search){
+                 count++;
+                  
+            }
+             k++; 
 
-        System.out.println();
-        System.out.println("the sum is: " + sum);
-        System.out.println("the average is: " + avg);
-
+            
+        }
+        
+        System.out.print("it appears " + count + " times");
     }
 }
