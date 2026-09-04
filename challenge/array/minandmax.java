@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class minandmax{
     public static void main(String[] args){
 
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter the number of elements you want in array: ");
-        int num = input.nextInt();
+        int num = scan.nextInt();
         int arr[] = new int[num];
 
         int i =0 ;
         while (i < arr.length){
             System.out.print("Enter the element no " + (i+1) + ": ");
-            arr[i] = input.nextInt();
+            arr[i] = scan.nextInt();
             i++;
 
         }
