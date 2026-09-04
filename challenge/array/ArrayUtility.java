@@ -34,7 +34,7 @@ public class ArrayUtility {
         System.out.print("Enter element to count its occurence:");
         int search = input.nextInt();
         int count= 0;
-        int k =0;
+        int k = 0;
         while(k < numArr.length){
             if(numArr[k] == search){
                  count++;
