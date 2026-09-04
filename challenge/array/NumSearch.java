@@ -25,12 +25,17 @@ public class NumSearch{
         //     j++;
         // 
 
+        
+    }
+
+    public static void countOccurence(int[] numArr){
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter element to count its occurence:");
         int search = input.nextInt();
         int count= 0;
         int k =0;
-        while(k < arr.length){
-            if(arr[k] == search){
+        while(k < numArr.length){
+            if(numArr[k] == search){
                  count++;
                   
             }
